@@ -7,5 +7,6 @@ import lombok.Data;
 @Builder
 public class MessageResponseDTO {
 
+    @Builder.Default
     private String message;
 }

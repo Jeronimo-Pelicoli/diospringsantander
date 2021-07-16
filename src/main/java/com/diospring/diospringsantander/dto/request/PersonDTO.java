@@ -10,6 +10,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -33,7 +34,7 @@ public class PersonDTO {
     private String cpf;
 
     @NotNull
-    private String birthDate;
+    private LocalDate birthDate;
 
     @Valid
     @NotEmpty
