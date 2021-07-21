@@ -14,9 +14,10 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/people")
-@AllArgsConstructor(onConstructor = @__(@Autowired))
+@AllArgsConstructor(onConstructor = @__({@Autowired}))
 public class PersonController {
 
+//    @Autowired
     private final PersonService personService;
 
     @PostMapping
