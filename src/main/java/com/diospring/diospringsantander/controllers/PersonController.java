@@ -17,8 +17,7 @@ import javax.validation.Valid;
 @AllArgsConstructor(onConstructor_ = {@Autowired})
 public class PersonController {
 
-//    @Autowired
-    private final PersonService personService;
+    private PersonService personService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
